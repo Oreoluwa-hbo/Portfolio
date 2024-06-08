@@ -46,7 +46,7 @@ function Hero() {
           />
         </h1>
         <p class="text-xl mt-4">
-          I'm searching for the next step in Development Journey.
+          I'm searching for the next step in my Development Journey.
         </p>
       </div>
       <SpinningModel />
