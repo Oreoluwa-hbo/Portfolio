@@ -72,10 +72,10 @@ export default function App({ Component }: PageProps) {
   ];
 
   const credentials = {
-    name: "John Doe",
+    name: "Oreoluwa Adegbesan",
   };
 
-  const url = "https://oreoluwa's-portfolio.deno.dev/";
+  const url = "https://oreoluwa-web.deno.dev/";
 
   return (
     <html lang="en">
