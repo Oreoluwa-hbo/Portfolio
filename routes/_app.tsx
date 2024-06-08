@@ -69,6 +69,11 @@ export default function App({ Component }: PageProps) {
       url: "www.linkedin.com/in/oreoluwa-adegbesan-aba2b117a",
       icon: "fa-brands:linkedin",
     },
+    {
+      name: "Email",
+      url: "mailto:oreoluwa626@gmail.com",
+      icon: "fa-solid:envelope",
+    }
   ];
 
   const credentials = {
