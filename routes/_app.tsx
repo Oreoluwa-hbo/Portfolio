@@ -66,7 +66,7 @@ export default function App({ Component }: PageProps) {
     },
     {
       name: "LinkedIn",
-      url: "www.linkedin.com/in/oreoluwa-adegbesan-aba2b117a",
+      url: "https://www.linkedin.com/in/oreoluwa-adegbesan-aba2b117a",
       icon: "fa-brands:linkedin",
     },
     {
