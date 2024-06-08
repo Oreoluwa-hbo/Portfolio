@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Avoid Layout Shift */
+iconify-icon {
+  width: 1.5em;
+  height: 1.5em;
+  /* not sure why but this line fixes layout shifting in the work experience section but only for overflowing text */
+  aspect-ratio: 1 / 1; 
+}
+
+iconify-icon svg {
+  object-fit: fill;
+}
