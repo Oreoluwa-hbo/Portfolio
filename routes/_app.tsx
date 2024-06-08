@@ -13,11 +13,11 @@ function MetaTags(
       </title>
       <meta
         name="title"
-        content={`${credentials.name} - Experienced Web Developer | Full Portfolio`}
+        content={`${credentials.name} - Software Developer | Full Portfolio`}
       />
       <meta
         name="description"
-        content={`Explore ${credentials.name}'s portfolio showcasing a diverse range of web development projects. Specializing in full-stack development with expertise in JavaScript, React, Node.js, and more. Discover how I can bring your web vision to life.`}
+        content={`Explore ${credentials.name}'s portfolio showcasing a diverse range of projects.`}
       />
 
       {/* Open Graph / Facebook */}
@@ -25,11 +25,11 @@ function MetaTags(
       <meta property="og:url" content={`${url}`} />
       <meta
         property="og:title"
-        content={`${credentials.name} - Experienced Web Developer | Full Portfolio`}
+        content={`${credentials.name} - Software Developer | Full Portfolio`}
       />
       <meta
         property="og:description"
-        content={`Explore ${credentials.name}'s portfolio showcasing a diverse range of web development projects. Specializing in full-stack development with expertise in JavaScript, React, Node.js, and more. Discover how I can bring your web vision to life.`}
+        content={`Explore ${credentials.name}'s portfolio showcasing a diverse range of projects.`}
       />
       <meta
         property="og:image"
@@ -41,11 +41,11 @@ function MetaTags(
       <meta property="twitter:url" content={`${url}`} />
       <meta
         property="twitter:title"
-        content={`${credentials.name} - Experienced Web Developer | Full Portfolio`}
+        content={`${credentials.name} - Software Developer | Full Portfolio`}
       />
       <meta
         property="twitter:description"
-        content={`Explore ${credentials.name}'s portfolio showcasing a diverse range of web development projects. Specializing in full-stack development with expertise in JavaScript, React, Node.js, and more. Discover how I can bring your web vision to life.`}
+        content={`Explore ${credentials.name}'s portfolio showcasing a diverse range of projects.`}
       />
       <meta
         property="twitter:image"
