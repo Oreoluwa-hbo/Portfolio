@@ -13,7 +13,7 @@ export default {
       // set themes for light/dark mode other than the default
       {
         // @ts-ignore Types don't work with this
-        light: themes.winter,
+        light: themes.aqua,
         // @ts-ignore Types don't work with this
         dark: themes.night,
       },
