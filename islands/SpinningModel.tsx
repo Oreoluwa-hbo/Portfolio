@@ -17,20 +17,20 @@ class SpinningModel extends Component {
 
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera(
-      75,
+      30,
       dimensions.x / dimensions.y,
-      0.1,
-      1000,
+      600,
+      0.2
     );
     const renderer = new THREE.WebGLRenderer({ alpha: true });
     const controls = new OrbitControls(camera, renderer.domElement);
     controls.enableDamping = true;
     controls.autoRotate = true;
+    controls.minDistance = 1; // Set the minimum distance to zoom in
+    controls.maxDistance = 10; // Set the maximum distance to zoom out
 
     renderer.setSize(dimensions.x, dimensions.y);
-    document.getElementById("model-container")?.appendChild(
-      renderer.domElement,
-    );
+    document.getElementById("model-container")?.appendChild(renderer.domElement);
 
     const loader = new GLTFLoader(loadingManager);
     let model: THREE.Object3D | undefined;
@@ -41,18 +41,14 @@ class SpinningModel extends Component {
         model = gltf.scene;
         scene.add(gltf.scene);
 
-        // rotate to align the model
-        gltf.scene.rotation.y = -1.5;
-        gltf.scene.rotation.x = 0.25;
-
-        // put the model in the middle of the scene
+        // Center the model in the scene
         const box = new THREE.Box3().setFromObject(gltf.scene);
         const center = new THREE.Vector3();
         box.getCenter(center);
         gltf.scene.position.sub(center);
 
-        // scale the model to fit the scene
-        const scale = 1.3;
+        // Scale the model to fit the scene
+        const scale = 0.005;
         gltf.scene.scale.set(scale, scale, scale);
 
         const animate = function () {
@@ -67,13 +63,14 @@ class SpinningModel extends Component {
       undefined,
       function (error: Error) {
         console.error(error);
-      },
+      }
     );
 
     const light = new THREE.AmbientLight(0x404040, 75); // soft white light
     scene.add(light);
 
-    camera.position.z = 0.65;
+    // Move the camera further back to have a better view of the model
+    camera.position.z = 3;
     controls.update();
   }
 
@@ -86,10 +83,7 @@ class SpinningModel extends Component {
         >
           <span>Loading 3D Model</span>
         </div>
-        <div
-          id="model-container"
-          class="w-full h-full"
-        />
+        <div id="model-container" class="w-full h-full" />
       </div>
     );
   }
