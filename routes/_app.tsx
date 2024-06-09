@@ -105,10 +105,10 @@ export default function App({ Component }: PageProps) {
               3D Art by{" "}
               <a
                 class="underline"
-                href="https://sketchfab.com/KJLOYH"
+                href="https://sketchfab.com/moritz.kampelmann"
                 target="_blank"
               >
-                Valery Kharitonov
+                Moritz Kampelmann
               </a>
             </span>
           </aside>
