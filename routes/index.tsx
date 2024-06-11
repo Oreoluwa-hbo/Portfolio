@@ -126,9 +126,9 @@ function Experience() {
       location: "Ottawa ON, Canada",
     },
     {
-      title: "Software Developer in Test",
+      title: "Software Tester",
       company: "Warner Bros. Discovery",
-      timePeriod: "January 2022 - December 2023",
+      timePeriod: "January 2022 - December 2022",
       location: "Ottawa ON, Canada",
     },
   ];
