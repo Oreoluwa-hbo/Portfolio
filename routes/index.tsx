@@ -126,7 +126,7 @@ function Experience() {
       location: "Ottawa ON, Canada",
     },
     {
-      title: "Software Tester",
+      title: "Software Developer in Test",
       company: "Warner Bros. Discovery",
       timePeriod: "January 2022 - December 2022",
       location: "Ottawa ON, Canada",
